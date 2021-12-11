@@ -6,7 +6,7 @@ const GetPostsQuery = gql`
     posts {
       slug
       title
-  
+      excerpt
     }
   }
 `;
@@ -27,13 +27,18 @@ export default function Index() {
     let data = useLoaderData();
 
     return (
+
+
         <ul>
-            {data.posts.map(({ slug, title }) => (
-                <h1 key={slug}>
-                    <Link to={`/blogs/${slug}`} prefetch="intent">
-                        <a>{title}</a>
-                    </Link>
-                </h1>
+            {data.posts.map(({ slug, title, excerpt }) => (
+                <p key={slug}>
+                    <div style={{  border: '1px solid rgba(0, 0, 0, 0.55)', padding: '5px', borderRadius: '5px'}}>
+                    <h1>{title}</h1>
+                       <span>{excerpt}---</span>
+                        <span> <Link to={`/blogs/${slug}`} prefetch="intent" >
+                    Read More..
+                    </Link></span></div>
+                </p>
             ))}
         </ul>
     );

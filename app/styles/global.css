@@ -217,3 +217,7 @@ input:where([type="search"]) {
   margin-top: 0;
   margin-bottom: 0;
 }
+.blog{
+  border: 2px;
+  padding: 10px;
+}

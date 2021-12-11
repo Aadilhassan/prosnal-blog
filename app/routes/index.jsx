@@ -6,33 +6,37 @@ import { useLoaderData, json, Link } from "remix";
 // https://remix.run/api/conventions#loader
 export let loader = () => {
   let data = {
-    resources: [
+    skills: [
       {
-        name: "Remix Docs",
+        name: "Node JS",
         url: "https://remix.run/docs"
       },
       {
-        name: "React Router Docs",
+        name: "REMIX JS Framework",
         url: "https://reactrouter.com/docs"
       },
       {
-        name: "Remix Discord",
+        name: "Express.js",
+        url: "https://discord.gg/VBePs6d"
+      },
+      {
+        name: "Discord Bots",
         url: "https://discord.gg/VBePs6d"
       }
     ],
-    demos: [
+    projects: [
       {
         to: "demos/actions",
-        name: "Actions"
+        name: "Climate Chage news API"
       },
       {
         to: "demos/about",
-        name: "Nested Routes, CSS loading/unloading"
+        name: "Discord AI Bot( JOEY BOT )"
       },
-      {
-        to: "demos/params",
-        name: "URL Params and Error Boundaries"
-      }
+      // {
+      //   to: "demos/params",
+      //   name: "URL Params and Error Boundaries"
+      // }
     ]
   };
 
@@ -55,8 +59,8 @@ export default function Index() {
   return (
     <div className="remix__page">
       <main>
-        <h2>Welcome to Remix!</h2>
-        <p>We're stoked that you're here. 🥳</p>
+        <h2>Welcome to MY world of Make believes.</h2>
+        <p>I'am stoked that you're here. </p>
         <p>
           Feel free to take a look around the code to see how Remix does things,
           it might be a bit different than what you’re used to. When you're
@@ -70,21 +74,21 @@ export default function Index() {
         </p>
       </main>
       <aside>
-        <h2>Demos In This App</h2>
+        <h2>My Projects</h2>
         <ul>
-          {data.demos.map(demo => (
-            <li key={demo.to} className="remix__page__resource">
-              <Link to={demo.to} prefetch="intent">
-                {demo.name}
+          {data.projects.map(project => (
+            <li key={project.to} className="remix__page__resource">
+              <Link to={project.to} prefetch="intent">
+                {project.name}
               </Link>
             </li>
           ))}
         </ul>
-        <h2>Resources</h2>
+        <h2>Favrouite Technologies</h2>
         <ul>
-          {data.resources.map(resource => (
-            <li key={resource.url} className="remix__page__resource">
-              <a href={resource.url}>{resource.name}</a>
+          {data.skills.map(skill => (
+            <li key={skill.url} className="remix__page__resource">
+              <a href={skill.url}>{skill.name}</a>
             </li>
           ))}
         </ul>
