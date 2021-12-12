@@ -59,6 +59,7 @@ export default function Index() {
   return (
     <div className="remix__page">
       <main>
+        <h1>Aadil Hassan</h1>
         <h2>Welcome to MY world of Make believes.</h2>
         <p>I'am stoked that you're here. </p>
         <p>
