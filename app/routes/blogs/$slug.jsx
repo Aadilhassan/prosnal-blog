@@ -67,11 +67,13 @@ export default function PostPage() {
 
     return (
         <>
+            <div style={{ img:"maxWidth= 100vw"}}>
             <h1>{ data.post.title}</h1>
             <div dangerouslySetInnerHTML={{ __html: data.post.content.html }} />
             {/*<html>{data.post.content.html}</html>*/}
             {/*<p>{data.post.Name}</p>*/}
             {/*<p>{data.post.price / 100}</p>*/}
+            </div>
         </>
     );
 }
