@@ -62,16 +62,14 @@ export default function Index() {
         <h1>Aadil Hassan</h1>
         <h2>Welcome to MY world of Make believes.</h2>
         <p>I'am stoked that you're here. </p>
+        Finally you found my website🥳
         <p>
-          Feel free to take a look around the code to see how Remix does things,
-          it might be a bit different than what you’re used to. When you're
-          ready to dive deeper, we've got plenty of resources to get you
-          up-and-running quickly.
+          Feel free to take a look around my website. I have made a lot of wonderful projects with some of the best technoligies in  this world.
+          I never stop learning because i think that world is moving very fast so you have to shift as fast as you can.
+          currently i am learning nodejs and i am really enjoying it.
         </p>
         <p>
-          Check out all the demos in this starter, and then just delete the{" "}
-          <code>app/routes/demos</code> and <code>app/styles/demos</code>{" "}
-          folders when you're ready to turn this into your next project.
+          Check out all the Projects that i have made and also in which i am working on.
         </p>
       </main>
       <aside>
