@@ -3,11 +3,16 @@ import { GraphQLClient, gql } from "graphql-request";
 
 const GetPostsQuery = gql`
   {
-    posts {
-      slug
-      title
-      excerpt
+    posts( orderBy: createdAt_DESC) {
+    id
+    slug
+    title
+    excerpt
+    updatedBy {
+      id
     }
+       createdAt
+  }
   }
 `;
 
@@ -24,16 +29,17 @@ export let loader = async () => {
 
 
 export default function Index() {
+
     let data = useLoaderData();
 
     return (
         <>
 
 
-            {data.posts.map(({ slug, title, excerpt }) => (
+            {data.posts.map(({ slug, title, excerpt,createdAt }) => (
                 <p key={slug}>
                     <div>
-                    <h2>{title}</h2>
+                       <span> <h2>{title}</h2></span><span style={{float: "right"}}><b>Created at:</b><tt>{createdAt.slice(0, 10)}</tt></span>
                        <span>{excerpt}---</span>
                         <span> <Link to={`/blogs/${slug}`} prefetch="intent" >
                     Read More..
