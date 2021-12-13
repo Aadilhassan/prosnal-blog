@@ -9,28 +9,28 @@ export let loader = () => {
     skills: [
       {
         name: "Node JS",
-        url: "https://remix.run/docs"
+        url: "https://nodejs.org"
       },
       {
         name: "REMIX JS Framework",
-        url: "https://reactrouter.com/docs"
+        url: "https://remix.run"
       },
       {
         name: "Express.js",
-        url: "https://discord.gg/VBePs6d"
+        url: "https://express.js.org"
       },
       {
         name: "Discord Bots",
-        url: "https://discord.gg/VBePs6d"
+        url: "https://top.gg"
       }
     ],
     projects: [
       {
-        to: "demos/actions",
+        url: "https://rapidapi.com/aahanalhassan/api/real-time-climate-change-news/",
         name: "Climate Chage news API"
       },
       {
-        to: "demos/about",
+        url: "https://top.gg",
         name: "Discord AI Bot( JOEY BOT )"
       },
       // {
@@ -78,10 +78,10 @@ export default function Index() {
         <h2>My Projects</h2>
         <ul>
           {data.projects.map(project => (
-            <li key={project.to} className="remix__page__resource">
-              <Link to={project.to} prefetch="intent">
+            <li key={project.url} className="remix__page__resource">
+              <a href={project.url} prefetch="intent">
                 {project.name}
-              </Link>
+              </a>
             </li>
           ))}
         </ul>
