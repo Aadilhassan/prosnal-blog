@@ -27,20 +27,20 @@ export default function Index() {
     let data = useLoaderData();
 
     return (
+        <>
 
 
-        <ul>
             {data.posts.map(({ slug, title, excerpt }) => (
                 <p key={slug}>
-                    <div style={{  border: '1px solid rgba(0, 0, 0, 0.55)', padding: '5px', borderRadius: '5px'}}>
-                    <h1>{title}</h1>
+                    <div>
+                    <h2>{title}</h2>
                        <span>{excerpt}---</span>
                         <span> <Link to={`/blogs/${slug}`} prefetch="intent" >
                     Read More..
                     </Link></span></div>
                 </p>
             ))}
-        </ul>
+       </>
     );
 }
 // export default function () {
