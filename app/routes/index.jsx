@@ -9,25 +9,26 @@ export let loader = () => {
     skills: [
       {
         name: "Node JS",
-        url: "https://nodejs.org"
+        url: "https://nodejs.org",
+
       },
       {
         name: "REMIX JS Framework",
-        url: "https://remix.run"
+        url: "https://remix.run",
       },
       {
         name: "Express.js",
-        url: "https://express.js.org"
+        url: "https://express.js.org",
       },
       {
         name: "Discord Bots",
-        url: "https://top.gg"
+        url: "https://top.gg",
       }
     ],
     projects: [
       {
         url: "https://rapidapi.com/aahanalhassan/api/real-time-climate-change-news/",
-        name: "Climate Chage news API"
+        name: "Climate Change news API"
       },
       {
         url: "https://top.gg",
@@ -87,7 +88,7 @@ export default function Index() {
         <ul>
           {data.skills.map(skill => (
             <li key={skill.url} className="remix__page__resource">
-              <a href={skill.url}>{skill.name}</a>
+            <a href={skill.url}> {skill.name}</a>
             </li>
           ))}
         </ul>

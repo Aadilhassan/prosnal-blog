@@ -37,9 +37,9 @@ export default function Index() {
 
 
             {data.posts.map(({ slug, title, excerpt,createdAt }) => (
-                <p key={slug}>
-                    <div>
-                       <span> <h2>{title}</h2></span><span style={{float: "right"}}><b>Created at:</b><tt>{createdAt.slice(0, 10)}</tt></span>
+                <p key={slug}  >
+                    <div style={{marginTop: "50px"}}>
+                       <span> <Link to={`/blogs/${slug}`} prefetch="intent" ><h2 style={{color:"#fff"}}>{title}</h2> </Link></span><span style={{float: "right"}}><b>Created at:</b><tt>{createdAt.slice(0, 10)}</tt></span>
                        <span>{excerpt}---</span>
                         <span> <Link to={`/blogs/${slug}`} prefetch="intent" >
                     Read More..
