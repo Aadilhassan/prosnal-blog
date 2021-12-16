@@ -1,5 +1,19 @@
-import { useLoaderData, json } from "remix";
+import { useLoaderData, json, MetaFunction } from "remix";
 import { GraphQLClient, gql } from "graphql-request";
+
+
+export const meta: MetaFunction = () => {
+    if (!data) {
+        return {
+            title: "A blogs by Aadil Hassan",
+            description: "A blogs by Aadil Hassan"
+        };
+    }
+    return {
+        title: `"${data.post.title}" By Aadil Hassan`,
+        description: `Enjoy the "${data.post.excerpt}" Author-- Aadil Hassan CreatedAt-- "${data.post.createdAt}"`
+    };
+};
 
 const GetPostBySlug = gql`
   query PostPageQuery($slug: String!) {
@@ -60,7 +74,6 @@ export let loader = async ({ params }) => {
 
     return json({ post });
 };
-
 
 export default function PostPage() {
     let data = useLoaderData();

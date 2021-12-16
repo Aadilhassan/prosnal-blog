@@ -48,8 +48,9 @@ export let loader = () => {
 // https://remix.run/api/conventions#meta
 export let meta = () => {
   return {
-    title: "Remix Starter",
-    description: "Welcome to remix!"
+    title: "Aadil Hassan Prosnall blog",
+    description: "Welcome to my website aadilhassan.me in this website i talk mostly about web devlopment and software devlopment. I never stop learning becsause I am Aadil Hassan",
+    keywords: "Aadil Hassan, web devlopment,Aadil Hassan prosnal blog, Ranchi,Aadil Hassan India, Aadil Hassan Website",
   };
 };
 

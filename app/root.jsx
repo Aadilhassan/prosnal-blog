@@ -98,7 +98,6 @@ function Document({ children }) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
-      <title>Aadil Hassan</title>
         <Meta />
         <Links />
       </head>
@@ -117,7 +116,7 @@ function Layout({ children }) {
     <div className="remix-app">
       <header className="remix-app__header">
         <div className="container remix-app__header-content">
-          <Link to="/" title="Aadil Hassan" className="remix-app__header-home-link">
+          <Link to="/"  className="remix-app__header-home-link">
             <RemixLogo />
           </Link>
           <nav aria-label="Main navigation" className="remix-app__header-nav">
