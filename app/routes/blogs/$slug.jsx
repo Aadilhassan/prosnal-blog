@@ -60,13 +60,14 @@ export let loader = async ({ params }) => {
         slug,
     });
 
-    return json({ post });
+    return json({ post })
 
 };
 export const meta = () => {
     let data = useLoaderData();
+
     return {
-        title:`"${ data.post.title}" Hello`,
+        title: "Aadil Hassan prosnal blog ",
         description: "Welcome to my website aadilhassan.me in this website i talk mostly about web devlopment and software devlopment. I never stop learning becsause I am Aadil Hassan",
         keywords: "Aadil Hassan, web devlopment,Aadil Hassan prosnal blog, Ranchi,Aadil Hassan India, Aadil Hassan Website",
     };
