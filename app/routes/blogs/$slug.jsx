@@ -1,19 +1,7 @@
-import { useLoaderData, json, MetaFunction } from "remix";
+import { useLoaderData, json,} from "remix";
 import { GraphQLClient, gql } from "graphql-request";
 
 
-export const meta: MetaFunction = () => {
-    if (!data) {
-        return {
-            title: "A blogs by Aadil Hassan",
-            description: "A blogs by Aadil Hassan"
-        };
-    }
-    return {
-        title: `"${data.post.title}" By Aadil Hassan`,
-        description: `Enjoy the "${data.post.excerpt}" Author-- Aadil Hassan CreatedAt-- "${data.post.createdAt}"`
-    };
-};
 
 const GetPostBySlug = gql`
   query PostPageQuery($slug: String!) {
@@ -73,13 +61,22 @@ export let loader = async ({ params }) => {
     });
 
     return json({ post });
-};
 
+};
+export const meta = () => {
+    let data = useLoaderData();
+    return {
+        title:`"${ data.post.title}" Hello`,
+        description: "Welcome to my website aadilhassan.me in this website i talk mostly about web devlopment and software devlopment. I never stop learning becsause I am Aadil Hassan",
+        keywords: "Aadil Hassan, web devlopment,Aadil Hassan prosnal blog, Ranchi,Aadil Hassan India, Aadil Hassan Website",
+    };
+};
 export default function PostPage() {
     let data = useLoaderData();
 
     return (
         <>
+
             <div style={{ img:"maxWidth= 100vw"}}>
             <h1>{ data.post.title}</h1>
             <div dangerouslySetInnerHTML={{ __html: data.post.content.html }} />
