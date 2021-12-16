@@ -62,7 +62,7 @@ export default function Index() {
     <div className="remix__page">
       <main>
         <h1><span style={{color: "#3DEFE9"}}
-        >Aadil</span> <span style={{color: "#6BD968"}}>Hassan</span> </h1>
+        >Aadil</span> <span style={{color: " #F44250"}}>Hassan</span> </h1>
         <h2><span style={{color: "#FECC1B"}}>Welcome to MY world of Make believes.</span></h2>
         <p>I'am stoked that you're here. </p>
         Finally you found my website🥳
@@ -76,7 +76,7 @@ export default function Index() {
         </p>
       </main>
       <aside>
-        <h2><span style={{color: "#3DEFE9"}}
+        <h2><span style={{color: "#6BD968"}}
         >My Projects</span></h2>
         <ul>
           {data.projects.map(project => (
@@ -87,7 +87,7 @@ export default function Index() {
             </li>
           ))}
         </ul>
-        <h2><span style={{color: "#6BD968"}}>Favrouite Technologies</span></h2>
+        <h2><span style={{color: "#D83BD2"}}>Favrouite Technologies</span></h2>
         <ul>
           {data.skills.map(skill => (
             <li key={skill.url} className="remix__page__resource">

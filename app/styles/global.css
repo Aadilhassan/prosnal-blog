@@ -46,7 +46,10 @@ body {
   line-height: 1.5;
   max-width: 100vw;
 }
-
+h1{
+  font-family: Arial Black;
+  font-size: 72px;
+}
 a {
   color: var(--color-links);
   text-decoration: none;
