@@ -46,10 +46,7 @@ body {
   line-height: 1.5;
   max-width: 100vw;
 }
-h1{
-  font-family: Arial Black;
-  font-size: 72px;
-}
+
 a {
   color: var(--color-links);
   text-decoration: none;
@@ -179,11 +176,17 @@ input:where([type="search"]) {
     grid-auto-rows: unset;
     grid-template-columns: repeat(2, 1fr);
   }
+  h1{
+    font-size: 40px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
   .remix__page {
     --gap: 4rem;
+  }
+  h1{
+    font-size: 75px;
   }
 }
 
