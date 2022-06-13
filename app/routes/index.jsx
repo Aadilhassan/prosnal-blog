@@ -63,7 +63,7 @@ export let loader = () => {
 // https://remix.run/api/conventions#meta
 export let meta = () => {
   return {
-    title: "Aadil Hassan Prosnall blog",
+    title: "Aadil Hassan web developer",
     description: "Aadil Hassan portfolio website , Aadil Hassan is a very pasionate Ranchi city ,India based Web Devloper who always tries to become more stronger than yesterday ",
     keywords: "Aadil Hassan, web devlopment,Aadil Hassan prosnal blog, Ranchi,Aadil Hassan India, Aadil Hassan Website",
   };
