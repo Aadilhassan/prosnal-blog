@@ -8,8 +8,8 @@ export let loader = () => {
   let data = {
     skills: [
       {
-        name: "Node JS",
-        url: "https://nodejs.org",
+        name: "Javascript",
+        url: "https://javascript.com",
 
       },
       {
@@ -21,23 +21,38 @@ export let loader = () => {
         url: "https://express.js.org",
       },
       {
-        name: "Discord Bots",
-        url: "https://top.gg",
+        name: "React js",
+        url: "https://reactjs.org",
+      },
+      
+      {
+       name: "Node JS",
+        url: "https://nodejs.org",
+
       }
     ],
     projects: [
+        {
+        url: "https://youtube-api-dl.onrender.com",
+        name: "Youtube video Downloader"
+      },
+       {
+        url: "https://zreels-3-1719pna6c-aadilhassan.vercel.app",
+        name: "Movie streaming webapp"
+      }, 
+      {
+        url: "https://lead-cash.live/",
+        name: "affiliate marketing platform"
+      }, 
+      {
+        url: "https://youtube-api-dl.onrender.com",
+        name: "Youtube video Downloader"
+      },
       {
         url: "https://rapidapi.com/aahanalhassan/api/real-time-climate-change-news/",
         name: "Climate Change news API"
       },
-      {
-        url: "https://top.gg",
-        name: "Discord AI Bot( JOEY BOT )"
-      },
-      // {
-      //   to: "demos/params",
-      //   name: "URL Params and Error Boundaries"
-      // }
+    
     ]
   };
 
@@ -49,7 +64,7 @@ export let loader = () => {
 export let meta = () => {
   return {
     title: "Aadil Hassan Prosnall blog",
-    description: "Welcome to my website aadilhassan.me in this website i talk mostly about web devlopment and software devlopment. I never stop learning becsause I am Aadil Hassan",
+    description: "Aadil Hassan portfolio website , Aadil Hassan is a very pasionate Ranchi city ,India based Web Devloper who always tries to become more stronger than yesterday ",
     keywords: "Aadil Hassan, web devlopment,Aadil Hassan prosnal blog, Ranchi,Aadil Hassan India, Aadil Hassan Website",
   };
 };
@@ -63,9 +78,9 @@ export default function Index() {
       <main>
         <h1><span style={{color: "#3DEFE9"}}
         >Aadil</span> <span style={{color: " #F44250"}}>Hassan</span> </h1>
-        <h2><span style={{color: "#FECC1B"}}>Welcome to MY world of Make believes.</span></h2>
+        <h2><span style={{color: "#FECC1B"}}>Hello world this is Aadil Hassan of Ranchi city</span></h2>
         <p>I'am stoked that you're here. </p>
-        Finally you found my website🥳
+        
         <p>
           Feel free to take a look around my website. I have made a lot of wonderful projects with some of the best technoligies in  this world.
           I never stop learning because i think that world is moving very fast so you have to shift as fast as you can.
